@@ -1,11 +1,13 @@
 Pepmint is a JAVA wrapper over the famous [Pygments library](http://pygments.org) written in Python. [Jython](http://jython.org) is used as the python interpreter for the JVM.
 
 The current release uses the following version of frameworks:
+
 * Java 1.6
 * Jython 2.5.2
 * Pygments 1.4
 
 The library can be used as,
+
 ```java
 public String highlight(String code, String language) {
 	Pepmint pepmint = null;
