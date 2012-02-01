@@ -19,8 +19,6 @@
 
 package com.sangupta.pepmint;
 
-import java.io.File;
-
 import org.python.core.PyFunction;
 import org.python.core.PyObject;
 import org.python.core.PyString;
@@ -46,15 +44,6 @@ public final class Pepmint {
 	public Pepmint() {
 		pythonInterpreter.exec("import sys");
 		pythonInterpreter.exec("sys.path.append('__pyclasspath__/Lib')");
-		
-		String codePath;
-        
-        codePath = new File("C:/projects/git/jarments/src/jython").getAbsoluteFile().getAbsolutePath();
-        pythonInterpreter.exec("sys.path.append('" + codePath + "')");
-        
-        codePath = new File("C:/projects/git/jarments/src").getAbsoluteFile().getAbsolutePath();
-        pythonInterpreter.exec("sys.path.append('" + codePath + "')");
-        
 		pythonInterpreter.exec("from pygments import highlight");
 		pythonInterpreter.exec("from pygments.lexers import get_lexer_by_name");
 		pythonInterpreter.exec("from pygments.formatters import HtmlFormatter");
