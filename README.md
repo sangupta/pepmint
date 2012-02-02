@@ -9,6 +9,9 @@ The current release uses the following version of frameworks:
 * Jython 2.5.2
 * Pygments 1.4
 
+Usage
+-----
+
 The library can be used as,
 
 ```java
@@ -21,6 +24,11 @@ public String highlight(String code, String language) {
 	return formattedCode;
 }
 ```
+
+Download
+--------
+
+The latest release of the library can be downloaded from the [Downloads](https://github.com/sangupta/pepmint/downloads) section. All download packages consist of the binaries, source code and the javadocs.
 
 License
 -------
