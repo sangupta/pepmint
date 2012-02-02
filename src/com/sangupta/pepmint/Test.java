@@ -19,25 +19,30 @@
 
 package com.sangupta.pepmint;
 
-import org.python.core.PyObject;
-
 /**
- * Wrapper class to encapsulate a Lexer as returned by the 
- * Pygments library.
+ * A simple command line test application to demonstrate the
+ * usage of the {@link Pepmint} library.
  * 
  * @author sangupta
  * @since Feb 2, 2012
  * @version 1.0
  */
-public final class Lexer {
+public class Test {
 
-	private final PyObject lexer;
-
-	Lexer(PyObject lexer) {
-		this.lexer = lexer;
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Pepmint pepmint = new Pepmint();
+		Lexer l = pepmint.newLexer("xml");
+		Formatter f = pepmint.newHtmlFormatter("");
+		
+		long start = System.currentTimeMillis();
+		String out = pepmint.highlight("<a>123</a>", l, f);
+		long end = System.currentTimeMillis();
+		
+		System.out.println(out);
+		System.out.println("Decorated in " + (end - start) + "ms.");
 	}
 
-	PyObject getLexer() {
-		return lexer;
-	}
 }

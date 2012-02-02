@@ -22,6 +22,14 @@ package com.sangupta.pepmint;
 import org.python.core.PyObject;
 import org.python.core.PyString;
 
+/**
+ * {@link Formatter} implementation for the HTML formatter of the
+ * Pygments library.
+ * 
+ * @author sangupta
+ * @since Feb 2, 2012
+ * @version 1.0
+ */
 public final class HtmlFormatter extends Formatter {
 
 	HtmlFormatter(PyObject formatter) {

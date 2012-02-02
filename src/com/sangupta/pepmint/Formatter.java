@@ -21,6 +21,14 @@ package com.sangupta.pepmint;
 
 import org.python.core.PyObject;
 
+/**
+ * Abstract class to encapsulate a formatter as returned by the
+ * Pygments library.
+ * 
+ * @author sangupta
+ * @since Feb 2, 2012
+ * @version 1.0
+ */
 public abstract class Formatter {
 	
 	protected final PyObject formatter;
