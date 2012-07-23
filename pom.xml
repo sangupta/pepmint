@@ -10,7 +10,7 @@
 
 	<groupId>com.sangupta</groupId>
 	<artifactId>pepmint</artifactId>
-	<version>1.1.1-SNAPSHOT</version>
+	<version>1.1.1</version>
 	<packaging>jar</packaging>
 
 	<name>pepmit</name>
@@ -29,7 +29,7 @@
 		<connection>scm:git:git://github.com/sangupta/pepmint.git</connection>
 		<developerConnection>scm:git:http://git@github.com/sangupta/pepmint.git</developerConnection>
 		<url>https://github.com/sangupta/pepmint</url>
-	  <tag>HEAD</tag>
+	  <tag>pepmint-1.1.1</tag>
   </scm>
 	
 	<developers>
