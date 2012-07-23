@@ -9,7 +9,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sangupta</groupId>
-	<artifactId>pepmit</artifactId>
+	<artifactId>pepmint</artifactId>
 	<version>1.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -135,6 +135,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			
 		</plugins>
 	</build>
 
