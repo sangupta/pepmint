@@ -31,3 +31,4 @@ release/*
 jython/*
 build/lib/*
 lib/*
+target/*
