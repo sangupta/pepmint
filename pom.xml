@@ -117,28 +117,22 @@
 				</configuration>
 			</plugin>		
 		
-			<!-- create a single jar -->
-			<!--
 			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
+				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					<finalName>pepmint</finalName>
+					<includes>
+						<include>**</include>
+					</includes>
 				</configuration>
 				<executions>
 					<execution>
-						<id>make-assembly</id>
 						<phase>package</phase>
 						<goals>
-							<goal>single</goal>
+							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
 			</plugin>
-			-->
-			
 		</plugins>
 	</build>
 
