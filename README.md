@@ -13,8 +13,11 @@ The library can be used as,
 
 ```java
 public String highlight(String code, String language) {
-	Pepmint pepmint = null;
-	Lexer lexer = pepmint.newLexer(format);
+	// must be an empty string at the least
+	String formatterParams = "";
+	
+	Pepmint pepmint = new Pepmint();
+	Lexer lexer = pepmint.newLexer(language);
 	Formatter formatter = pepmint.newHtmlFormatter(formatterParams);
 	
 	String formattedCode = pepmint.highlight(code, lexer, formatter);
@@ -22,10 +25,40 @@ public String highlight(String code, String language) {
 }
 ```
 
-Download
+Features
 --------
 
+**1.1.2**
+* Integrated with Maven Central
+* Upgraded Pygments to version 1.5
+
+**1.0.0**
+* Initial release as a downloadable binary
+* Jython 2.5.2
+* Pygments 1.4
+
+Downloads
+---------
+
 The latest release of the library can be downloaded from the [Downloads](https://github.com/sangupta/pepmint/downloads) section. All download packages consist of the binaries, source code and the javadocs.
+
+Alternatively, you may download the builds from Maven Central repository using:
+
+```
+<dependency>
+    <groupId>com.sangupta</groupId>
+    <artifactId>pepmint</artifactId>
+    <version>1.1.2</version>
+</dependency>
+```
+
+Dependencies
+------------
+
+Pepmint depends on the following Java library:
+* Jython 2.5.2
+
+Jython is used to run native Pygments python code inside the JVM. Thus, the performance is slow.
 
 License
 -------
